@@ -1,0 +1,19 @@
+<div style="font-size: 20px;text-align: center;padding-top: 5%;">Welcome back {{loginuser}} !</div>
+<p style="margin-left: 10px;">The success of your customer onboarding greatly relies on the first few actions you take, and it starts with your welcome message or email. Welcome messages for websites are a great way to convey the core messaging of your brand by using welcome videos that showcase the powerful features.</p>
+<div class="row">
+    <div class="card col-md-2" *ngFor="let data of leng" style="margin: 20px;
+    margin-left: 5%;">
+      <img
+        [src]="data.image"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{data.title}}</h5>
+        <p class="card-text">
+            {{data.description}}
+        </p>
+      </div>
+    </div>
+</div>
+    <button class="btn"style="font-size:10px;margin-top: 16px;margin-left:47%" (click)="showchange()">Show More</button>
